@@ -1,5 +1,8 @@
 package com.springboot01config.demo.bean;
 
+/**
+ * @author wh_yi
+ */
 public class Dog {
     private String name;
     private Integer age;
