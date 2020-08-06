@@ -1,0 +1,27 @@
+server:
+    port: 8081
+person:
+    lastName: 张三
+    age: 18
+    boss: false
+    birthday: 2017/10/20
+    maps: {k1: 10,k2: 12}
+    lists:
+      - lisi
+      - wanger
+    dog:
+      name: 小灰
+      age: 6
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8085
+spring:
+  profiles: prod
