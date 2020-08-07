@@ -10,6 +10,7 @@ public class Dog {
     private String weight;
     private String birth;
     private String heigh;
+    private String color;
 
     @Override
     public String toString() {
@@ -19,6 +20,7 @@ public class Dog {
                 ", weight='" + weight + '\'' +
                 ", birth='" + birth + '\'' +
                 ", heigh='" + heigh + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
 
@@ -28,6 +30,14 @@ public class Dog {
 
     public void setHeigh(String heigh) {
         this.heigh = heigh;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getWeight() {
