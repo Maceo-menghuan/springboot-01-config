@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @version 1.0
  * @author wh_yi
+ * @version 1.0
  * @date 2020/08/06 12:01
  * 将所有配置文件的每一个属性的值映射到这个组件里面
  * @ConfigurationProperties:将本类中所有属性和配置文件的相关配置相匹配 只有这个组件是容器里的组件，才能用@ConfigurationProperties功能
@@ -22,6 +22,7 @@ public class Person {
     private Integer age;
     private boolean boss;
     private Date birthday;
+    private String identify;
 
     private Map<String, Object> maps;
     private List<Object> lists;
@@ -29,15 +30,24 @@ public class Person {
 
     @Override
     public String toString() {
-        return "person{" +
+        return "Person{" +
                 "lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", boss=" + boss +
                 ", birthday=" + birthday +
+                ", identify='" + identify + '\'' +
                 ", maps=" + maps +
                 ", lists=" + lists +
                 ", dog=" + dog +
                 '}';
+    }
+
+    public String getIdentify() {
+        return identify;
+    }
+
+    public void setIdentify(String identify) {
+        this.identify = identify;
     }
 
     public String getLastName() {

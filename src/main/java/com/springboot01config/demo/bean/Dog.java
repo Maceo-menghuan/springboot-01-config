@@ -9,6 +9,7 @@ public class Dog {
     private Integer age;
     private String weight;
     private String birth;
+    private String heigh;
 
     @Override
     public String toString() {
@@ -17,7 +18,16 @@ public class Dog {
                 ", age=" + age +
                 ", weight='" + weight + '\'' +
                 ", birth='" + birth + '\'' +
+                ", heigh='" + heigh + '\'' +
                 '}';
+    }
+
+    public String getHeigh() {
+        return heigh;
+    }
+
+    public void setHeigh(String heigh) {
+        this.heigh = heigh;
     }
 
     public String getWeight() {
