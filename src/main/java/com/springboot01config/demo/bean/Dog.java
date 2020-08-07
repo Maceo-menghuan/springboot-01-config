@@ -3,16 +3,27 @@ package com.springboot01config.demo.bean;
 /**
  * @author wh_yi
  */
+
 public class Dog {
     private String name;
     private Integer age;
+    private String weight;
 
     @Override
     public String toString() {
-        return "dog{" +
+        return "Dog{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", weight='" + weight + '\'' +
                 '}';
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public String getName() {
