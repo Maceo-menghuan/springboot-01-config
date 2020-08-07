@@ -7,6 +7,7 @@ package com.springboot01config.demo.bean;
 public class Dog {
     private String name;
     private Integer age;
+    private String weight;
     private String birth;
 
     @Override
@@ -14,8 +15,17 @@ public class Dog {
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", weight='" + weight + '\'' +
                 ", birth='" + birth + '\'' +
                 '}';
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public String getBirth() {
