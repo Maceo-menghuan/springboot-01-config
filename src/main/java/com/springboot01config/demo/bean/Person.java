@@ -22,6 +22,7 @@ public class Person {
     private Integer age;
     private boolean boss;
     private Date birthday;
+    private Integer grade;
 
     private Map<String, Object> maps;
     private List<Object> lists;
@@ -29,15 +30,24 @@ public class Person {
 
     @Override
     public String toString() {
-        return "person{" +
+        return "Person{" +
                 "lastName='" + lastName + '\'' +
                 ", age=" + age +
                 ", boss=" + boss +
                 ", birthday=" + birthday +
+                ", grade=" + grade +
                 ", maps=" + maps +
                 ", lists=" + lists +
                 ", dog=" + dog +
                 '}';
+    }
+
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
     }
 
     public String getLastName() {
